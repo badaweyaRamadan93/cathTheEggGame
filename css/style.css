@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.landing-page{
+    background-image: url("../images/backGroundImg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+/* start level div */
+.levelprompet .startbtn .btnstart{
+    display: block;
+    color:#fff;
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: darkorchid;
+    border-radius:45px ;
+    position: absolute;
+    top: 23%;
+    left: 24%;
+    border: none;
+}
+.landing-page .levelprompet .level{
+    width: 500px;
+    height: 300px;
+    background-color: dimgrey;
+    z-index: 10;
+    opacity: 0.7;
+    border-radius: 25px;
+    padding: 20px;
+    position: absolute;
+    top: 49%;
+    left: 48%;
+    transform: translate(-48%,-48%);
+    display: none; 
+}
+.btnlevel{
+    color:#fff;
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
+    background-color: darkorchid;
+    border-radius:45px ;
+    margin: 10px;
+    border: none;
+}
+#textName{
+    width: 80%;
+    border-radius: 20px;
+    border: 1px;
+    height:35px;
+    padding-left: 20px;
+}
+#error_msg{
+    color: red;
+    margin-left: 90px;
+    font-size: large;
+    visibility: hidden;
+}
+.btn:hover, .btnlevel:hover,.btnstart:hover{
+    transform: rotate(360deg);
+    transition: all 2s ease;
+    background-color:rgb(38, 9, 53);
+    color: white;
+    z-index: 6;
+    border: none;
+}
+/* start level div */
+/* start game over div */
+#gameOver{
+    width: 300px;
+    height: 200px;
+    background-color:lightslategray;
+    z-index: 10;
+    opacity: 0.7;
+    border-radius: 25px;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: none;  
+}
+#gameOverText{
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#btn_play_again {
+    
+    width: 150px;
+}
+ /* end game over div */
+ /* start all data div */
+
+#golden_egg,#black_egg,#pressent{
+    position: absolute; 
+    top: 20%;
+    z-index: 150;
+    display: none;
+}
+#golden_egg{
+    left:15%;
+}
+#black_egg{
+    left: 35%;
+}
+#pressent{
+    left: 58%;
+}
+
+#all_data{
+     display: none;  
+}
+#timer{
+    float: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    color: blueviolet;
+    font-size: 27px;
+    padding: 14px;
+    margin: 10px;
+}
+#score{
+    float: right;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    color: blueviolet;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+#stop{
+    position: absolute;
+    float: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    color: blueviolet;
+    font-size: 30px;
+    width: 105px;
+    padding: 10px;
+    top: 12%;
+    left: 1%;
+}
+#playerName{
+    position: absolute;
+    float: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    color: blueviolet;
+    font-size: 20px;
+    width: 170px;
+    padding: 10px;
+    top: 22%;
+    left: 1%;
+}
+#exit{
+    position: absolute;
+    float: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    color: blueviolet;
+    font-size: 25px;
+    width: 90px;
+    padding: 10px;
+    top: 30%;
+    left: 1%;
+}
+#timer:hover,#score:hover,#exit:hover,#stop:hover,#playerName:hover{
+    transform: rotate(360deg);
+    transition: all 2s ease;
+}
+.hen{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    z-index: 3;
+}
+#hen1{
+    left: 15%;
+}
+#hen2{
+    left:41% ;
+}
+#hen3{
+    left: 71%
+}
+.egg{
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    z-index: 10;
+}
+ #egg1{
+    left: 16%;
+}
+#egg2{
+    left: 42%;
+}
+#egg3{
+    left: 72%;
+} 
+#basket{
+    position: absolute;
+    bottom: 0%;
+    z-index: 45;
+}
+/* end all data div */

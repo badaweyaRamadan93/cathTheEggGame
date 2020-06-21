@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cath the egg</title>
+    <link rel="shortcut icon" href="images/chicken-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start the audio game -->
+    <audio id="intro">
+        <source src="audio/Chicken1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="catchegg">
+        <source src="audio/basket.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="lose">
+        <source src="audio/lose.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="braekegg">
+        <source src="audio/break.mp3"type="audio/mpeg" > 
+    </audio>
+    <!-- end the audio game -->
+    <!-- start the landing page -->
+        <section class="landing-page">
+            <!-- start level prompet -->
+            <div class="levelprompet"> 
+                <div class="startbtn">
+                    <button class="btnstart" id="btnstart"> start</button>
+                </div>
+                <div class="level" id="levelprompet">
+                    <img src="images/chicken.gif">
+                    <img src="images/chicken.gif" width="70" height="140" >
+                    <img src="images/chicken.gif">
+                    <br>
+                    <span id="error_msg">pleaze write your name</span>
+                    <input type="text" id="textName" placeholder="enter your name">
+                    <br>
+                    <button id="easybtn" class="btnlevel">easy</button>
+                    <button id="normalbtn" class="btnlevel">normal</button>
+                    <button id="hardbtn" class="btnlevel">hard</button>
+                </div>
+            </div> 
+            <!-- end level prompet -->
+            <!-- start game over div -->
+            <div id="gameOver"> 
+                <p id="gameOverText">game over</p>
+                <button id="btn_play_again" class="btnlevel">play again </button>
+                <button id="exit_btn" class="btnlevel">exit</button>
+            </div>
+            <!-- end game over div -->
+            <div id="golden_egg"><img src="images/goldenegg.png" style="width: 80px; height: 85px;"></div>
+        <div id="black_egg"><img src="images/blackegg.png" style="width: 80px; height: 85px;"></div>
+        <div id="pressent"><img src="images/gift.png" style="width: 80px; height: 75px;"></div>
+        <!-- start all data level -->
+        <div id="all_data"> 
+            <span id="timer"> 0:0</span>
+            <span id="score">0</span>
+            <span id="playerName"></span>
+            <span id="stop"> stop</span>
+            <span id="exit"> exit</span>
+            <div id="hen1" class="hen"><img src="images/mchken.gif" style="width: 200px; height: 135px;"></div>
+            <div id="hen2" class="hen"><img src="images/mchken.gif" style="width: 200px; height: 135px;"></div>
+            <div id="hen3" class="hen"><img src="images/mchken.gif" style="width: 200px; height: 135px;"></div>
+            <div id="egg1" class="egg"><img src="images/whiteegg.png" style="width: 75px; height:90px;"></div>
+            <div id="egg2" class="egg"><img src="images/whiteegg.png" style="width: 75px; height: 90px;"></div>
+            <div id="egg3" class="egg"><img src="images/whiteegg.png" style="width: 75px; height: 90px;"></div>
+            <div id="basket" > <img src="images/Basket.png" style="width: 220px; height: 100px;"></div>
+            <div id="floor" >
+                <img src="images/brokenEgg.png" id="brokenEgg1" style="position: absolute; left: 20%; display: none; bottom: 0%;"/>
+                <img src="images/brokenEgg.png" id="brokenEgg2" style="position: absolute; left: 45%; display: none; bottom: 0%;"/>
+                <img src="images/brokenEgg.png" id="brokenEgg3" style="position: absolute; left: 70%; display: none; bottom: 0%;"/>
+            </div>
+
+        </div> 
+        <!-- end all data level -->
+        </section>
+    <!-- end the landing page -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
